@@ -13,4 +13,17 @@ venv/
 ENV/
 
 *.pyc
+*.json
+data.py
+config.py
+firebase.json
+addsake.json
+japanstate.py
+usertype.py
+
+
+fi
 .DS_Store
+
+/logs
+/uploads
