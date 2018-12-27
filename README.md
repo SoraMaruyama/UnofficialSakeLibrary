@@ -4,9 +4,9 @@ Sake Library is the only sake database in the world.
 
 <p align="center">
 
-  <img src="https://raw.githubusercontent.com/SoraMaruyama/UnofficialSakeLibrary/master/readmeasset/home.png">
-  <img src="https://raw.githubusercontent.com/SoraMaruyama/UnofficialSakeLibrary/master/readmeasset/sakelist.png">
-  <img src="https://raw.githubusercontent.com/SoraMaruyama/UnofficialSakeLibrary/master/readmeasset/addsake.png">
+  <img src="https://raw.githubusercontent.com/SoraMaruyama/UnofficialSakeLibrary/master/readmeasset/home1.png">
+  <img src="https://raw.githubusercontent.com/SoraMaruyama/UnofficialSakeLibrary/master/readmeasset/sakelist1.png">
+  <img src="https://raw.githubusercontent.com/SoraMaruyama/UnofficialSakeLibrary/master/readmeasset/addsake1.png">
 </p>
 
 ### Prerequisites
