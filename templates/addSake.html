@@ -1,0 +1,74 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="container">
+  <br />
+  <h2>Add Sake</h2>
+</div>
+<div class="container">
+  <br />
+  <div class="row align-items-center justify-content-center">
+    <div class="col-md-4">
+      <br />
+      <button type="submit" class="btn btn-default">
+        <a href="/uploads">OCR</a>
+      </button>
+      <br />
+      <br />
+      <form action="" method="post" role="form">
+        {{ form.csrf }}
+        <div class="form-group">
+          <label for="name">Sake Brandname:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Brandname?"
+          />
+          <br />
+          <label for="saketype">Sake Type:</label>
+          <div class="form-group">
+            {{ form.saketype(class="form-control") }}
+          </div>
+          <br />
+          <label for="taste">Taste:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="taste"
+            name="taste"
+            placeholder="taste?"
+          />
+          <br />
+          <label for="description">Description:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="description"
+            name="description"
+            placeholder="description?"
+          />
+        </div>
+        <br />
+        <button action="/addSake" type="submit" class="btn btn-default">
+          Submit
+        </button>
+      </form>
+      <br />
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for message in messages %} {% if "Error" not in message[1]:
+      %}
+      <div class="alert alert-info">
+        <strong>Success! </strong> {{ message[1] }}
+      </div>
+      {% endif %} {% if "Error" in message[1]: %}
+      <div class="alert alert-danger">
+        <strong>Error: </strong> {{ message[1] }}
+      </div>
+      {% endif %} {% endfor %} {% endif %} {% endwith %}
+    </div>
+    <br />
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ginger
+Version: 0.0.4
+Summary: A very lightweight static site generator
+Home-page: https://github.com/DistilledLtd/ginger
+Author: Distilled Ltd
+Author-email: randd@distilled.net
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: csscompressor
+Requires-Dist: Jinja2
+Requires-Dist: jsmin
+Requires-Dist: libsass
+Requires-Dist: PyYAML
+Requires-Dist: watchdog
+
+UNKNOWN
+
+

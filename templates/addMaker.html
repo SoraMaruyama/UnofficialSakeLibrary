@@ -1,0 +1,48 @@
+{% extends "layout.html" %} {% block body %}
+
+<div class="container"><br>
+       <h2>Add Maker</h2>
+  </div>
+  <div class=container"><br>
+  <div class="row align-items-center justify-content-center">
+  <div class="col-md-4">
+  <form  action="" method="post" role="form">
+   {{ form.csrf }}
+   <div class="form-group">
+     <label for="maker">Maker:</label>
+     <input type="text" class="form-control" id="maker" name="maker" placeholder="sake maker name">
+       <br>
+     <label for="region">Region:</label>
+     <div>
+     {{form.region(class="form-control")}}
+      </div>
+     <br>
+     <label for="url">URL:</label>
+     <input type="text" class="form-control" id="url" name="url" placeholder="website url">
+ </div>
+   <br>													   
+     <button action="/addMaker" type="submit" class="btn btn-success">Submit</button>
+ </form>
+ <br>
+   {% with messages = get_flashed_messages(with_categories=true) %}
+       {% if messages %}
+   {% for message in messages %}
+       {% if "Error" not in message[1]: %}
+           <div class="alert alert-info">
+           <strong>Success! </strong> {{ message[1] }}
+           </div>
+       {% endif %}
+       {% if "Error" in message[1]: %}
+           <div class="alert alert-danger">
+           <strong>Error: </strong> {{ message[1] }}
+           </div>
+       {% endif %}
+   {% endfor %}
+       {% endif %}
+   {% endwith %}
+ </div>
+ <br>
+ </div>
+ </div>
+
+{% endblock %}

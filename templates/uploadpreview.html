@@ -1,0 +1,42 @@
+{% extends "layout.html" %} {% block body %}
+<div class="container">
+  <br />
+  <h3>Sake Label is detected!</h3>
+
+  <br />
+  <img src="static/{{img_filename}}" width="200" height="200" class="img-thumbnail"
+  /> <br />
+  <br />
+  <ul class="list-group">
+    <br />
+    <li class="list-group-item">
+      {% for text in visionApiText %} {{ text }}
+
+      {% endfor %}
+    </li>
+    <br />
+    <form action="" method="post" role="form">
+        <div class="form-group">
+          <br />
+    <label for="description">Description:</label>
+    <textarea class="form-control" id="description" rows="10" cols="40">
+        {% for text in visionApiText %} {{ text }}{% endfor %}
+    </textarea>
+    <br />
+    <button action="/addSake" type="submit" class="btn btn-success">
+      Submit
+    </button>
+  </form>
+</div>
+  </ul>
+</div>
+
+
+{% endblock %}
+
+
+
+
+
+
+

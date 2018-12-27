@@ -1,0 +1,21 @@
+{% extends "layout.html" %} {% block body %} {{ dropzone.load_css() }}
+{{
+  dropzone.style("border: 2px dashed #0087F7; margin: 10%; min-height: 200px;")
+}}
+<div class="container"><h3>Please upload a sake label!</h3></div>
+
+{{ dropzone.create(action='uploads') }} {{ dropzone.load_js() }}
+{{ dropzone.config() }}
+
+<form
+  action="/uploadpreview"
+  method="post"
+  enctype="multipart/form-data"
+  role="form"
+>
+  <div align="center">
+    <button type="submit" class="btn btn-info">Submit</button>
+  </div>
+</form>
+
+{% endblock %}

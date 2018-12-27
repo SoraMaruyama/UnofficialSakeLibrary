@@ -1,0 +1,32 @@
+{% extends "layout.html" %} {% block body %}
+
+<h1>Sake List</h1>
+  
+  <div class="container">
+      <div class="row">
+          {% for sake in sakes %}
+          <div class="col-sm-4">
+           <a href="sake/{{ sake.id }}">
+           <h4>{{ sake.name }}</h4>
+           </a>
+           <a href="sake/{{ sake.id }}">
+            <img
+              src="static/image/{{ sake.image }}"
+              width="200"
+              height="200"
+              style="object-fit:contain;"
+            /></a></br></br><strong>Type </strong>&nbsp;{{ sake.type }} 
+            <br>     
+            <strong> Produced In </strong>&nbsp;{{ sake.region }}
+            <br>
+            <strong>Produced By </strong>&nbsp;{{ sake.maker }} 
+            <br>
+            <a href="{{ sake.url }}"> >> Go to website </a>
+    </div>
+    {% endfor %}
+   </div>
+  </div>
+
+ 
+
+{% endblock %}
