@@ -1,6 +1,6 @@
 # Sake Library
 
-One Paragraph of project description goes here
+Sake Library is the only sake database in the world.
 
 ## Getting Started
 
@@ -73,8 +73,6 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 ## Authors
 
 - **Sora Maruyama** - _Initial work_ - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
 ## License
 
