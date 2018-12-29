@@ -77,10 +77,14 @@ pip
 
 ### Installing
 
-How to get a development env running
-
 ```
 pip install requirements.txt
+```
+
+### How to run
+
+```
+python app.py
 ```
 
 ## Built With
