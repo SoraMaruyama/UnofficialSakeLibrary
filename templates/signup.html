@@ -1,12 +1,19 @@
 <html>
   <head>
      <title>Signup Form</title>
-     <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+     <link
+     rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+   />
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
   </head>
   <body>
      <div class="container"><br>
+
        <center>
           <h2>Sign Up</h2>
        </center>
@@ -14,6 +21,7 @@
      <div class=container"><br>
      <div class="row align-items-center justify-content-center">
      <div class="col-md-4">
+
      <form  action="" method="post" role="form">
       {{ form.csrf }}
       <div class="form-group">
@@ -23,20 +31,17 @@
         <label for="lastname">Last Name:</label>
         <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Lastname?">
           <br>
-        <label for="usertype">Usertype:</label>
-        <div>
-          {{form.usertype}}
-        </div>
-        </select>
-          <br>
+          <label for="usertype">User Type:</label>
+          <div class="form-group">
+            {{ form.usertype(class="form-control") }}
+          </div>
+          <br />
         <label for="email">Email:</label>
         <input type="text" class="form-control" id="email" name="email" placeholder="Your email address.">
           <br>
         <label for="password">Password:</label>
         <input type="password" class="form-control" id="password" name="password" placeholder="Enter a password.">
         <br>
-        <label for="password2">Repeat Password:</label>
-        <input type="password2" class="form-control" id="password2" name="password2" placeholder="Repeat your password.">
       </div>
         <br>													   
       <center>
