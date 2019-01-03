@@ -1,20 +1,20 @@
 {% extends "layout.html" %} {% block body %}
 <div class="jumbotron text-center">
-  <h1>{{ name }}</h1>
+  <h1>{{ doc.to_dict().name }}</h1>
 </div>
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <strong>Type </strong>&nbsp;{{ type }} <br />
-      <strong> Produced In </strong>&nbsp;{{ region }} <br />
-      <strong>Produced By </strong>&nbsp;{{ maker }} <br />
+      <strong>Type </strong>&nbsp;{{ doc.to_dict().type }} <br />
+      <strong> Produced In </strong>&nbsp;{{ doc.to_dict().region }} <br />
+      <strong>Produced By </strong>&nbsp;{{ doc.to_dict().maker }} <br />
 
-      <a href="{{ url }}"> >> Go to website </a>
+      <a href="{{ doc.to_dict().url }}"> >> Go to website </a>
     </div>
     <div class="col-sm-4">
       <img
-        src="{{url_for('static', filename='image/'+image) }}"
-        alt="{{ image }}"
+        src="{{ doc.to_dict().image_url }}"
+        alt="{{ doc.to_dict().name }}"
         width="200"
         height="200"
         style="object-fit:contain;"

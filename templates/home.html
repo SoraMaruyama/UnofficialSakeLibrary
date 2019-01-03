@@ -7,15 +7,13 @@
   {% from "_formhelpers.html" import render_field %}
   <form method="post">
     <div class="form-group">
-      <dl></dl>
+      <dl>
         {{ render_field(form.select, class="form-control") }}
-        <p >{{ render_field(form.search,class="form-control") }}</p>
+        <p>{{ render_field(form.search, class="form-control") }}</p>
       </dl>
 
       <!-- <p><input type="submit" class="form-control" value="Search" /></p> -->
-      <button type="submit" class="btn btn-default">
-        Search
-      </button>
+      <button type="submit" class="btn btn-default">Search</button>
     </div>
   </form>
 </div>

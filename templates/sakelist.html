@@ -1,27 +1,29 @@
 {% extends "layout.html" %} {% block body %}
 
+
 <h1>Sake List</h1>
+
   
   <div class="container">
       <div class="row">
-          {% for sake in sakes %}
+          {% for doc in docs %}
           <div class="col-sm-4">
-           <a href="sake/{{ sake.id }}">
-           <h4>{{ sake.name }}</h4>
+           <a href="sake/{{ doc.id }}">
+           <h4>{{ doc.to_dict().name }}</h4>
            </a>
-           <a href="sake/{{ sake.id }}">
+           <a href="sake/{{ doc.id }}">
             <img
-              src="static/image/{{ sake.image }}"
+              src="{{ doc.to_dict().image_url }}"
               width="200"
               height="200"
               style="object-fit:contain;"
-            /></a></br></br><strong>Type </strong>&nbsp;{{ sake.type }} 
+            /></a></br></br><strong>Type </strong>&nbsp;{{ doc.to_dict().type }} 
             <br>     
-            <strong> Produced In </strong>&nbsp;{{ sake.region }}
+            <strong> Produced In </strong>&nbsp;{{ doc.to_dict().region }}
             <br>
-            <strong>Produced By </strong>&nbsp;{{ sake.maker }} 
+            <strong>Produced By </strong>&nbsp;{{ doc.to_dict().maker }} 
             <br>
-            <a href="{{ sake.url }}"> >> Go to website </a>
+            <a href="{{ doc.to_dict().url }}"> >> Go to website </a>
     </div>
     {% endfor %}
    </div>
@@ -30,3 +32,4 @@
  
 
 {% endblock %}
+
