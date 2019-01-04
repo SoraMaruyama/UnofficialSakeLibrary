@@ -72,7 +72,7 @@ pylint==1.9.3
 Pyrebase==3.0.27
 python-jwt==2.0.1
 pytz==2018.7
-PyYAML==3.13
+PyYAML==4.2b1
 requests==2.21.0
 requests-oauthlib==1.0.0
 requests-toolbelt==0.7.0
