@@ -1,0 +1,16 @@
+../../bin/ginger,sha256=MnjhGAz47FXUHZ49I_5ZtUdzEk3GioOCT3O2D7B5DuA,282
+ginger-0.0.4.dist-info/INSTALLER,sha256=zuuue4knoyJ-UwPPXg8fezS7VCrXJQrAP7zeNuwvFQg,4
+ginger-0.0.4.dist-info/METADATA,sha256=LygUrc-YzXuSIaIa-0ygopJ-Tx-mGkHgqV7Wpxwrhjw,393
+ginger-0.0.4.dist-info/RECORD,,
+ginger-0.0.4.dist-info/WHEEL,sha256=5SpMnqY0ochpzjyzPpjWECeylLHU_RGC6DEZSP-3hxE,93
+ginger-0.0.4.dist-info/entry_points.txt,sha256=XJtD06NKU_6goaSBRWxkfJf171ufKBUCYpPoH11-SIA,51
+ginger-0.0.4.dist-info/top_level.txt,sha256=wqlG9BH8pUqreLWlIRJxq7tFVVHLPR1LhA-1PAJnQ_M,13
+ginger/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ginger/__init__.pyc,,
+ginger/__main__.py,sha256=qWya88IG3FyxYwgHExqlvcO7FFn-B5uracpXiboyyqA,824
+ginger/__main__.pyc,,
+ginger/build.py,sha256=X_1ykZhAQ4tb1Fy5yxnfrEmtUgXhoU84H4vehEvPj5s,5329
+ginger/conf.py,sha256=e-xmxuZVgcaI9kZMB6ERuVKW8ga63-KOndW0NMmnl00,1134
+ginger/conf.pyc,,
+input/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+input/__init__.pyc,,

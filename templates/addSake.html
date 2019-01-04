@@ -9,7 +9,7 @@
   <div class="row align-items-center justify-content-center">
     <div class="col-md-4">
       <br />
-      <button type="submit" class="btn btn-default">
+      <button type="submit" class="btn btn-info">
         <a href="/uploads">OCR</a>
       </button>
       <br />
@@ -17,6 +17,8 @@
       <form action="" method="post" role="form">
         {{ form.csrf }}
         <div class="form-group">
+          <label for="maker">Maker:</label>
+          <div class="form-group">{{ form.maker(class="form-control") }}</div>
           <label for="name">Sake Brandname:</label>
           <input
             type="text"
@@ -30,7 +32,6 @@
           <div class="form-group">
             {{ form.saketype(class="form-control") }}
           </div>
-          <br />
           <label for="taste">Taste:</label>
           <input
             type="text"
@@ -50,7 +51,7 @@
           />
         </div>
         <br />
-        <button action="/addSake" type="submit" class="btn btn-default">
+        <button action="/addSake" type="submit" class="btn btn-info">
           Submit
         </button>
       </form>

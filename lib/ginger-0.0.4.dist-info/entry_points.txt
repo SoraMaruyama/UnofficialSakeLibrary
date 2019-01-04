@@ -1,0 +1,3 @@
+[console_scripts]
+ginger = ginger.__main__:ginger
+
