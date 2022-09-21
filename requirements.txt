@@ -70,7 +70,7 @@ pycodestyle==2.4.0
 pycparser==2.19
 pylint==1.9.3
 Pyrebase==3.0.27
-python-jwt==2.0.1
+python-jwt==3.3.4
 pytz==2018.7
 PyYAML==4.2b1
 requests==2.21.0
